@@ -21,6 +21,7 @@ export const IndexFiles = (
         localFileStorage.push({
           name: currentDirectoryFiles[i],
           type: "node",
+          location: `${loc}/${currentDirectoryFiles[i]}`,
           children: await IndexFiles(
             `${loc}/${currentDirectoryFiles[i]}`,
             childLevel + 1
@@ -31,6 +32,7 @@ export const IndexFiles = (
         localFileStorage.push({
           name: currentDirectoryFiles[i],
           type: "leaf",
+          location: `${loc}/${currentDirectoryFiles[i]}`,
           children: null,
           meta: getFileType(currentDirectoryFiles[i]),
         });
