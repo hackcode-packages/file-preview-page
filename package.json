@@ -1,15 +1,14 @@
 {
-  "name": "my-awesome-packege",
+  "name": "file-preview-page",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc src/app.ts --outfile dist/app.ts"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hackcode-packages/file-preview-generator.git"
+    "url": "git+https://github.com/hackcode-packages/file-preview-page.git"
   },
   "keywords": [
     "file",
@@ -23,10 +22,14 @@
   "author": "YashKumarVerma <yk.verma2000@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hackcode-packages/file-preview-generator/issues"
+    "url": "https://github.com/hackcode-packages/file-preview-page/issues"
   },
-  "homepage": "https://github.com/hackcode-packages/file-preview-generator#readme",
+  "homepage": "https://github.com/hackcode-packages/file-preview-page/issues",
   "devDependencies": {
+    "@types/node": "^14.6.4",
     "typescript": "^4.0.2"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0"
   }
 }
