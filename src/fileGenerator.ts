@@ -17,5 +17,6 @@ tag("html",
         tag("h1","Directory Listing"),
         tag("hr"),
         tag("p", listItems)
-    )
+    ),
+    tag("i", "Generated Using <a href='https://github.com/hackcode-packages/file-preview-page'>File Preview Pages</a>")
 );
