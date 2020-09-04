@@ -1,5 +1,5 @@
 import { FileObject } from "./interface";
-import { log, lstat, readdir } from "./auxillary";
+import { log, lstat, readdir, getFileType } from "./auxillary";
 
 export const IndexFiles = (
   loc: string,
@@ -32,6 +32,7 @@ export const IndexFiles = (
           name: currentDirectoryFiles[i],
           type: "leaf",
           children: null,
+          meta: getFileType(currentDirectoryFiles[i]),
         });
       }
     }
