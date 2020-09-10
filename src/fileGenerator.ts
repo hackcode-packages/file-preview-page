@@ -11,12 +11,15 @@ ${children1 != undefined ? children1 : ""}${children2 != undefined ? children2 :
 export const HTMLContentGenerator = (listItems:string) : string => 
 tag("html", 
     tag("head", 
-        tag("title", "Sometime Awesome !")
+        tag("title", "Directory Listing")
     ),
-    tag("body", 
-        tag("h1","Directory Listing"),
-        tag("hr"),
-        tag("p", listItems)
+    tag("body",
+        tag("div", 
+            tag("h1","Directory Listing"),
+            tag("hr"),
+            tag("p", listItems)
+        ),
+        tag("hr")
     ),
     tag("i", "Generated Using <a href='https://github.com/hackcode-packages/file-preview-page'>File Preview Pages</a>")
 );
