@@ -1,4 +1,4 @@
-import * as chalk from "chalk";
+import chalk from "chalk";
 import * as util from "util";
 import * as fs from "fs";
 
@@ -46,8 +46,8 @@ export const getFileType = (fileName: string): FileMetaData => {
   const compressed = ["zip", "tar", "gz", "iso", "rar", "7z"];
   const code = ["js", "json", "cpp", "java", "class", "ts", "php"];
 
-  const extension = fileName.split(".").pop();
-  let fileType = undefined;
+  const extension = fileName.split(".").pop() || "txt";
+  let fileType = "file";
 
   if (images.includes(extension)) {
     fileType = "image";

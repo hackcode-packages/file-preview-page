@@ -33,7 +33,7 @@ export const IndexFiles = (
           name: currentDirectoryFiles[i],
           type: "leaf",
           location: `${loc}/${currentDirectoryFiles[i]}`,
-          children: null,
+          children: [],
           meta: getFileType(currentDirectoryFiles[i]),
         });
       }
