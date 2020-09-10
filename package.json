@@ -1,8 +1,8 @@
 {
-  "name": "file-preview-page",
+  "name": "@hackcode/file-preview-page",
   "version": "1.0.0",
   "description": "a simple command line utility to generate index pages in any directory",
-  "main": "app.js",
+  "main": "./dist/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
@@ -18,7 +18,7 @@
     "hackcode"
   ],
   "bin": {
-    "generate-preview": "./dist/app.js"
+    "file-preview-page": "./dist/app.js"
   },
   "author": "YashKumarVerma <yk.verma2000@gmail.com>",
   "license": "MIT",

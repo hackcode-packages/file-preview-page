@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { FileObject } from "./interface";
 import { IndexFiles } from "./fileIndexer";
 import { GenerateUlLiFromTree, createFile } from "./auxillary";
