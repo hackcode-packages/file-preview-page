@@ -18,6 +18,7 @@ const worker = async () => {
 
   /** write data to file */
   await createFile("./index.html", FinalHTMLContent);
+  await createFile("./dataDump.json", JSON.stringify(FileGlobalStorage));
 };
 
 /** invoke worker */
